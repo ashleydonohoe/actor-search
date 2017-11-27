@@ -21,12 +21,13 @@ class SearchBar extends Component {
 
   onInputChange(event) {
     this.setState({
-      term: event.target.value
+      actor: event.target.value
     });
   }
 
   onFormSubmit(event) {
     event.preventDefault();
+    console.log(this.state.actor);
 
     this.props.fetchActorResults(this.state.actor);
     this.setState({
@@ -36,12 +37,14 @@ class SearchBar extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onFormSubmit} className="input-group">
-        <input placeholder="Get a five-day forecast in your favorite cities" className="form-control" value={this.state.term} onChange={this.onInputChange}/>
-        <span className="input-group-btn">
-          <button type="submit" className="btn btn-secondary">Submit</button>
-        </span>
-      </form>
+      <div className="row">
+        <form onSubmit={this.onFormSubmit} className="input-group col-md-12">
+          <input placeholder="Enter the name of an actor/actress" className="form-control" value={this.state.actor} onChange={this.onInputChange}/>
+          <span className="input-group-btn">
+            <button type="submit" className="btn btn-primary">Search</button>
+          </span>
+        </form>
+      </div>
     );
   }
 }
