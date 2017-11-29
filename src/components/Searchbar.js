@@ -39,7 +39,7 @@ class SearchBar extends Component {
     return (
       <div className="row">
         <form onSubmit={this.onFormSubmit} className="input-group col-md-12">
-          <input placeholder="Enter the name of an actor/actress" className="form-control" value={this.state.actor} onChange={this.onInputChange}/>
+          <input id="searchbar" placeholder="Enter the name of an actor/actress" className="form-control" value={this.state.actor} onChange={this.onInputChange}/>
           <span className="input-group-btn">
             <button type="submit" className="btn btn-primary">Search</button>
           </span>

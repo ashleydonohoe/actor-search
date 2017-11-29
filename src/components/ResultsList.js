@@ -6,11 +6,15 @@ import _ from 'lodash';
 class ResultsList extends Component {
   renderResults() {
     const { results } = this.props;
-    const resultsArray = results.map((result) => {
-      return <ResultItem person={result} key={result.name}/>
-    });
+    if(results.length > 0) {
+      const resultsArray = results.map((result) => {
+        return <ResultItem person={result} key={result.name}/>
+      });
 
-    return resultsArray;
+      return resultsArray;
+    } else {
+      return <p className="error">No results found!</p>
+    }
   }
 
   render() {

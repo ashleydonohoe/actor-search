@@ -3,3 +3,58 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+h1 {
+  margin: 10px;
+  color: #007bff;
+}
+
+
+hr {
+  border-color: #007bff;
+  opacity: 0.6;
+}
+
+.input-group-btn:not(:first-child)>.btn-group:first-child, .input-group-btn:not(:first-child)>.btn:first-child {
+  margin-left: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+img {
+  max-height: 200px;
+}
+
+.actor-cell {
+  border: 1px solid #007bff;
+  margin-left: 25px;
+  max-width: 270px;
+  margin-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+  text-indent: -40px;
+  text-align: left;
+  font-size: 12px;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.error {
+  font-size: 24px;
+  margin-left: 20px;
+}
