@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default({person}) => {
   const knownFor = person.known_for;
@@ -13,7 +14,7 @@ export default({person}) => {
 
   return (
   <div className="col-md-4 col-sm-6 text-center actor-cell" key={name}>
-    <h3>{name}</h3>
+    <Link to={`/results/${person.id}`}><h3>{name}</h3></Link>
     <img src={imageURL} alt={name} className="img-thumbnail"/>
     <h5>Top Shows/Movies</h5>
     <ul>{knownForList}</ul>

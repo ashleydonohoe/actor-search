@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import SearchBar from './Searchbar';
 import ResultsList from './ResultsList';
 
-class App extends Component {
+class AppIndex extends Component {
   render() {
     return (
       <div className="container">
@@ -19,4 +19,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default AppIndex;
