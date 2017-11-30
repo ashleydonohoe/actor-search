@@ -15,7 +15,8 @@ export function fetchActorResults(actor) {
 }
 
 export function fetchActorInfo(id) {
-  const url = `https://api.themoviedb.org/3/search/person/${id}?api_key=${API_KEY}&language=en-US&include_adult=false`;
+  const url = `https://api.themoviedb.org/3/person/${id}?api_key=${API_KEY}&language=en-US`;
+  console.log(url);
   const request = axios.get(url);
 
   return {
